@@ -1,13 +1,16 @@
+import os
 import mysql.connector
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def get_connection():
-
     connection = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Viswa@1704",
-        database="green_bloom_db"
+        host=os.getenv("DB_HOST", "localhost"),
+        user=os.getenv("DB_USER", "root"),
+        password=os.getenv("DB_PASSWORD", ""),
+        database=os.getenv("DB_NAME", "green_bloom_db")
     )
 
     return connection
