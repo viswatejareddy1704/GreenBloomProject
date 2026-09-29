@@ -91,7 +91,7 @@ def display_plant_image(plant_name, image_file=None, width="full"):
 
             st.image(
                 image,
-                use_container_width=True
+                width="stretch"
             )
 
         except UnidentifiedImageError:
@@ -582,7 +582,7 @@ def plant_management():
 
         st.dataframe(
             display_df,
-            use_container_width=True,
+            width="stretch",
             hide_index=True
         )
 
@@ -665,7 +665,7 @@ def plant_management():
             submitted = st.form_submit_button(
                 "➕ Add Plant",
                 type="primary",
-                use_container_width=True
+                width="stretch"
             )
 
 
@@ -863,7 +863,7 @@ def plant_management():
             update_button = st.form_submit_button(
                 "💾 Update Plant",
                 type="primary",
-                use_container_width=True
+                width="stretch"
             )
 
 
@@ -1035,7 +1035,7 @@ def plant_management():
         if st.button(
             "🗑️ Delete Plant",
             type="primary",
-            use_container_width=True
+            width="stretch"
         ):
 
             if not confirm:
@@ -1189,6 +1189,6 @@ def plant_management():
 
             st.dataframe(
                 display_df,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )

@@ -307,7 +307,7 @@ def billing_management():
         generate_bill = st.button(
             "🧾 Generate Bill",
             type="primary",
-            use_container_width=True
+            width="stretch"
         )
 
         if generate_bill:

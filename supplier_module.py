@@ -282,7 +282,7 @@ def view_suppliers(suppliers=None):
 
     st.dataframe(
         suppliers,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
@@ -342,7 +342,7 @@ def add_supplier():
         submitted = st.form_submit_button(
             "➕ Add Supplier",
             type="primary",
-            use_container_width=True
+            width="stretch"
         )
 
 
@@ -625,7 +625,7 @@ def update_supplier(suppliers=None):
         update_button = st.form_submit_button(
             "💾 Update Supplier",
             type="primary",
-            use_container_width=True
+            width="stretch"
         )
 
 
@@ -877,7 +877,7 @@ def delete_supplier(suppliers=None):
     if st.button(
         "🗑️ Delete Supplier",
         type="primary",
-        use_container_width=True
+        width="stretch"
     ):
 
         if not confirm:

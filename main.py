@@ -416,7 +416,7 @@ def dashboard():
                         "quantity"
                     ]
                 ],
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -446,7 +446,7 @@ def dashboard():
                         "quantity"
                     ]
                 ],
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -491,7 +491,7 @@ def dashboard():
 
         st.dataframe(
             inventory,
-            use_container_width=True,
+            width="stretch",
             hide_index=True
         )
 
@@ -525,7 +525,7 @@ def dashboard():
 
         st.dataframe(
             recent_sales,
-            use_container_width=True,
+            width="stretch",
             hide_index=True
         )
 

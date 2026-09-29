@@ -295,7 +295,7 @@ def view_customers(customers=None):
 
     st.dataframe(
         customers,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
@@ -350,7 +350,7 @@ def add_customer():
         submitted = st.form_submit_button(
             "➕ Add Customer",
             type="primary",
-            use_container_width=True
+            width="stretch"
         )
 
 
@@ -596,7 +596,7 @@ def update_customer(customers=None):
         update_button = st.form_submit_button(
             "💾 Update Customer",
             type="primary",
-            use_container_width=True
+            width="stretch"
         )
 
 
@@ -851,7 +851,7 @@ def delete_customer(customers=None):
     if st.button(
         "🗑️ Delete Customer",
         type="primary",
-        use_container_width=True
+        width="stretch"
     ):
 
         if not confirm:
@@ -1093,6 +1093,6 @@ def purchase_history():
 
     st.dataframe(
         display_history,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )

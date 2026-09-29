@@ -180,7 +180,7 @@ def reports_management():
 
                 st.bar_chart(
                     plant_sales,
-                    use_container_width=True
+                    width="stretch"
                 )
 
             # ---------------------------------------------
@@ -205,7 +205,7 @@ def reports_management():
 
                 st.line_chart(
                     daily_sales,
-                    use_container_width=True
+                    width="stretch"
                 )
 
             # ---------------------------------------------
@@ -225,7 +225,7 @@ def reports_management():
 
             st.dataframe(
                 display_sales,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -332,7 +332,7 @@ def reports_management():
 
             st.bar_chart(
                 stock_chart,
-                use_container_width=True
+                width="stretch"
             )
 
             # ---------------------------------------------
@@ -354,7 +354,7 @@ def reports_management():
 
                     st.bar_chart(
                         category_stock,
-                        use_container_width=True
+                        width="stretch"
                     )
 
             # ---------------------------------------------
@@ -381,7 +381,7 @@ def reports_management():
 
             st.dataframe(
                 display_plants,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -450,7 +450,7 @@ def reports_management():
 
             st.dataframe(
                 plants,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -579,7 +579,7 @@ def reports_management():
 
                 st.bar_chart(
                     customer_chart,
-                    use_container_width=True
+                    width="stretch"
                 )
 
             # ---------------------------------------------
@@ -597,7 +597,7 @@ def reports_management():
 
             st.dataframe(
                 display_customer,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -738,7 +738,7 @@ def reports_management():
 
             st.dataframe(
                 display_sales,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
